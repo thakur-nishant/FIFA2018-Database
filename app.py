@@ -22,7 +22,7 @@ def home():
 def getPlayers():
     if request.method == "POST":
         CName = request.form['CName']
-        sql = "SELECT PName, PNo, Position FROM PLAYER WHERE LOWER(Team) = '{}';".format(CName.lower())
+        sql = "SELECT PName, PNo, Position FROM PLAYER WHERE LOWER(Team) LIKE '{}';".format(CName.lower())
         print(sql, CName)
         # Execute the SQL command
         cursor.execute(sql)

@@ -15,15 +15,17 @@
 	<div style="padding: 10%;">
 		<h1>Name: Nishant Thakur</h1>
 		<h1>ID: 1001544591</h1>
+		<h1>FIFA Worldcup 2018 API</h1>
 		<br>
-		<h1> </h1>
+		<h2> Country Roster Search API</h2>
 		<form id = "CForm" method = "POST" action="/getPlayers">
 			<input type="text" name="CName"><br><br>
 			<input type="submit" name="submit1">
 		</form>
 		<br>
 
-		<h1>Search Match Results based on Group Stage</h1>
+		<h2>Search Match Results based on Match Type</h2>
+		<h3>{Group Stage: A,B,C,D,E,F,G,H // Q final: Q // Semi final: S // Finals: L }</h3>
 		<form id = "GForm" method="POST" action="/getResults">
 			<input type="text" name="GType"><br><br>
 			<input type="submit" name="submit2">
